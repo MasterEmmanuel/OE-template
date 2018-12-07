@@ -19,7 +19,7 @@
      <!-- a lousy attempt to making this happen. surely you can do better -->
       {% now 'H' as time_now %}
       {% if time_now == '20' %}
-    <link rel="stylesheet" href="{% static 'home/css/night_mode.css' %}">
+     <link rel="stylesheet" href="{% static 'home/css/night_mode.css' %}">
       {% elif time_now < '6' %}
      <link rel="stylesheet" href="{% static 'home/css/night_mode.css' %}">
       {% else %}
@@ -31,7 +31,6 @@
   </head>
 
   <body>
-
   
    <div class="navbar navbar-default navbar-fixed top">
      
