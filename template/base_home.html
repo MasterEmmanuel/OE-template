@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load tz %}
+    {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Emmanuel Okwudike">
+
+    
+    {% block title %}<title>HOME | Emmanuel Okwudike</title>{% endblock %}
+  
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link href="{% static 'home/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home/css/day_mode.css' %}">
+
+
+
+  </head>
+
+  <body>
+
+  
+   <div class="navbar navbar-default navbar-fixed top">
+     
+       <a href="{% url 'resume' %}">Resume</a>
+       <a href="{% url 'blog' %}">Blog</a>
+       <a href="{% url 'home' %}">Home</a>
+
+   </div>
+
+   {% block content %}
+ 
+    <div class="wrapper">
+      <div class="section">
+        <h1>Emmanuel Okwudike</h1>
+        <p>Machine Intelligence Enthusiast · Web Developer · Tech Writer</p>
+      </div>
+
+      <br>
+      <br>
+      <br>
+          <div class="section">
+            <p class="social">
+                    <a href="https://linkedin.com/in/emmanuel-okwudike-4200aa156">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="https://github.com/MasterEmmanuel">
+                        <i class="fab fa-github"></i>
+                      </a>
+                      <a href="https://twitter.com/iamOEmmanuel">
+                        <i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="I don't have one. This icon is only here because I like it">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+            </p>
+    
+          
+            <p class="social_ii">
+             <a href="mailto:okwudike.emmanuel@gmail.com"><i class="fas fa-envelope"></i></a>·<a href="tel:+234 (816) 257-5674"><i class="fas fa-phone fa-outindent"></i></a>
+            </p>
+          </div>
+          <br>
+      {% endblock %}
+<br>
+    <div class="footer">
+            <div class="container">
+              <a>Copyright &copy; OEMMANUEL {% now 'Y' %}</a>
+
+            </div>
+  </body>
+</html>
+
