@@ -14,7 +14,17 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="{% static 'home/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'home/css/day_mode.css' %}">
+      
+      
+     <! -- a lousy attempt to making this happen. surely you can do better -->
+      {% now 'H' as time_now %}
+      {% if time_now == '20' %}
+    <link rel="stylesheet" href="{% static 'home/css/night_mode.css' %}">
+      {% elif time_now < '6' %}
+     <link rel="stylesheet" href="{% static 'home/css/night_mode.css' %}">
+      {% else %}
+      <link rel="stylesheet" href="{% static 'home/css/day_mode.css' %}">
+      {% endif %}
 
 
 
@@ -69,7 +79,7 @@
     <div class="footer">
             <div class="container">
               <a>Copyright &copy; OEMMANUEL {% now 'Y' %}</a>
-
+        </div>
             </div>
   </body>
 </html>
