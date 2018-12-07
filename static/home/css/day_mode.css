@@ -1,0 +1,152 @@
+
+.navbar{
+  overflow: hidden;
+  background-color: #292929;
+  position: fixed;
+  top:0;
+  width:100%;
+
+}
+
+.navbar a{
+  float: right;
+  display: block;
+  color: rgb(177, 168, 168);
+ 
+  padding:11px 10px;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+
+}
+.navbar a:hover{
+  background:  rgb(243, 243, 243);
+ 
+}
+
+.navbar a:active,a:focus{
+  color:black;
+      }
+
+body {
+    margin: 0;
+    font-size: 16px;
+    margin-top: 20px;
+    background-color: rgb(243, 243, 243);
+  
+  }
+  .wrapper {
+    font-family: "Roboto", sans-serif;
+    padding-top: 100px;
+    color: #172836;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .15px;
+  }
+
+  .post_detail_section {
+    padding: 80px;
+    color: #1b1b1b;
+    
+
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: none;
+    padding: 1em;
+    color: #4e5368;
+    font-size: 1.3em;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  a:active,a:focus,a:hover{
+    color:black;
+        }
+  
+  p {
+    text-emphasis: none;
+    text-align: center;
+    
+
+  }
+  
+  h1 {
+    
+    font-family: "Old Standard TT", serif;
+    font-size: 33.8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7.3px;
+    margin: 0;
+    line-height:50px;
+    font-weight: bold;
+  }
+  h2{
+    text-align: center;
+    font-family:'Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    color: #161616;
+
+  }
+
+  h3 {
+    text-align: center;
+    font-family:'Segoe UI Emoji','Segoe UI Symbol';
+    font-size: 20;
+    font-weight: bold;
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    color: #b3b7b9;
+
+  }
+  
+
+  
+  .section {
+    padding: 0 1em;
+    margin: 3em auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .contact_social {
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: center;
+  }
+  .contact_mail {
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+
+  .footer {
+    text-align:center;
+    text-emphasis: none;
+    text-decoration: solid;
+    text-decoration-color: #fff;
+    padding:.5rem 0;
+    background-blend-mode: darken;
+    background-color: #0a0a0a;
+    overflow: hidden;
+    position: fixed;
+    bottom:0;
+    width:100%;
+ 
+  }
+  .footer a{
+    float: center;
+    display: block;
+    color: rgb(109, 105, 105);
+    text-align: center;
+    padding:10px 12px;
+    font-size: 14px;
+  
+  }
+.header{
+  text-emphasis: none;
+}
